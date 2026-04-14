@@ -22,7 +22,7 @@ The simulation follows the stochastic differential equation for GBM:
 $$ dS_t = (r - q) S_t dt + \sigma S_t dW_t $$
 
 The price at each discrete step is calculated as:
-$$ S_{t+\Delta t} = S_t \exp\left( (r - q - \frac{\sigma^2}{2})\Delta t + \sigma \sqrt{\Delta t} Z \right) $$
+$$S_{t+\Delta t} = S_t \exp\left( (r - q - \frac{\sigma^2}{2})\Delta t + \sigma \sqrt{\Delta t} Z \right)$$
 
 Where $Z \sim N(0, 1)$.
 

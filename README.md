@@ -19,10 +19,10 @@ This pricer simulates thousands (or millions) of potential price paths, calculat
 
 The simulation follows the stochastic differential equation for GBM:
 
-$$dS_t = (r - q) S_t dt + \sigma S_t dW_t$$
+$$ dS_t = (r - q) S_t dt + \sigma S_t dW_t $$
 
 The price at each discrete step is calculated as:
-$$S_{t+\Delta t} = S_t \exp\left( (r - q - \frac{\sigma^2}{2})\Delta t + \sigma \sqrt{\Delta t} Z \right)$$
+$$ S_{t+\Delta t} = S_t \exp\left( (r - q - \frac{\sigma^2}{2})\Delta t + \sigma \sqrt{\Delta t} Z \right) $$
 
 Where $Z \sim N(0, 1)$.
 
@@ -30,5 +30,5 @@ Where $Z \sim N(0, 1)$.
 
 The accuracy of a Monte Carlo simulation is governed by the **Central Limit Theorem**. The code provides an error margin calculated as:
 
-P\left( \hat{C} - z_{\alpha/2} \frac{\sigma}{\sqrt{N}} \leq C \leq \hat{C} + z_{\alpha/2} \frac{\sigma}{\sqrt{N}} \right) = 1 - \alpha
+$$ P\left( \hat{C} - z_{\alpha/2} \frac{\sigma}{\sqrt{N}} \leq C \leq \hat{C} + z_{\alpha/2} \frac{\sigma}{\sqrt{N}} \right) = 1 - \alpha $$
 

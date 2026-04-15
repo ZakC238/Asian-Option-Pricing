@@ -1,10 +1,14 @@
-# Excel temporary files
-~$*.xlsx
-~$*.xlsm
-~$*.xlsb
-~$*.xls
-
-# Office temporary files
-~$*
+~$*.xls*
+*.xlk
 *.tmp
-*.laccdb
+.ipynb_checkpoints/
+.virtual_documents/
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.DS_Store
+Thumbs.db
+.vscode/

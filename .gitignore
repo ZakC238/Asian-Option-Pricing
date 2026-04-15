@@ -1,0 +1,10 @@
+# Excel temporary files
+~$*.xlsx
+~$*.xlsm
+~$*.xlsb
+~$*.xls
+
+# Office temporary files
+~$*
+*.tmp
+*.laccdb
